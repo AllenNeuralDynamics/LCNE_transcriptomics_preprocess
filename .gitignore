@@ -56,8 +56,11 @@ coverage.xml
 *.py,cover
 .hypothesis/
 .pytest_cache/
+notebooks/.ipynb_checkpoints
 *scratch*
 notebook/*scratch*
+notebook/*OLD.ipynb
+
 
 # Translations
 *.mo

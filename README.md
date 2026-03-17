@@ -10,4 +10,5 @@ Basic main preprocessing pipelines for the main repo inputs.
 - apply inverse registration from the pre-existing conversion matrix 
 - filter the populations 
 ## 3. retroSeq
+- QC on the targeted cells
 - batch normalizations 

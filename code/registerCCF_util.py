@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import json
-import cv2
 import os,glob
 import re
 

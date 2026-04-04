@@ -3,8 +3,6 @@ ARG REGISTRY_HOST
 FROM $REGISTRY_HOST/codeocean/pytorch:2.4.0-cuda12.4.0-mambaforge24.5.0-0-python3.12.4-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
-ARG GIT_ASKPASS
-COPY git-askpass /
 
 RUN conda install -y \
         jupyter==1.1.1 \
@@ -16,6 +14,9 @@ RUN pip install --upgrade numpyro
 RUN pip install --no-cache-dir "numpy<2.3"
 RUN pip install mygene
 RUN conda install -c conda-forge python-igraph
+RUN pip install scikit-image
+RUN pip install toml
+RUN pip install opencv-python
 
 ADD "https://github.com/coder/code-server/releases/download/v4.100.3/code-server-4.100.3-linux-amd64.tar.gz" /.code-server/code-server.tar.gz
 	

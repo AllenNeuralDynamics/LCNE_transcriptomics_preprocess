@@ -13,11 +13,16 @@ def get_paths(verbose: bool = False) -> dict:
 
     # get path of this file
     root_path = Path(__file__).parent.parent
+    data_root = root_path / "data"
+
     config_path = root_path / "config.toml"
-    if not config_path.exists():
-        raise FileNotFoundError(f"Config file not found at {config_path}")
-    config = toml.load(config_path)
+    if config_path.exists():
+        config = toml.load(config_path)
+    else:
+        config = {}
+
     config["package_root"] = root_path
+    config["data_root"] = data_root
     if verbose:
         print(config)
     return config

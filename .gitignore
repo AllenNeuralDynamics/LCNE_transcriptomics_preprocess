@@ -160,3 +160,4 @@ dmypy.json
 
 # Local notebook playground copy
 notebooks/02_snRNA_batchcorrection_playground.ipynb
+notebooks/*/*HPC.ipynb

@@ -25,6 +25,7 @@ def get_paths(verbose: bool = False) -> dict:
     config["data_root"] = data_root
     config["merfish_metadata"] = data_root / "merfish" / "metadata"
     config["registered_output"] = root_path / "scratch" / "merfish_results" / "registered"
+    config["result"] = root_path / "results" / "merfish"
     if verbose:
         print(config)
     return config

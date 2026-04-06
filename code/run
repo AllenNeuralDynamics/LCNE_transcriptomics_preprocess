@@ -18,7 +18,7 @@ NOTEBOOKS=(
     "notebooks/snRNAseq/01_remove_chromosomal_XY.ipynb"
     "notebooks/snRNAseq/02_snRNA_batchcorrection.ipynb"
     "notebooks/merfish/MERFISH_preprocess.ipynb"
-    "notebooks/retroseq/00_b_create_adata_from_raw.ipynb.ipynb"
+    "notebooks/retroseq/00_b_create_adata_from_raw.ipynb"
 )
 
 # Run each notebook

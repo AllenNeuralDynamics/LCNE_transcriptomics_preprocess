@@ -36,6 +36,6 @@ for notebook in "${NOTEBOOKS[@]}"; do
 done
 
 echo ""
-echo "=== All notebooks completed successfully ==="
+echo "=== All notebooks completed successfully !!!==="
 echo "Results in /results"
 

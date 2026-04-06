@@ -159,5 +159,4 @@ dmypy.json
 .vscode
 
 # Local notebook playground copy
-notebooks/02_snRNA_batchcorrection_playground.ipynb
-# notebooks/*/*HPC.ipynb
+/code/notebook/snRNAseq/rds2h5*.R
